@@ -1,0 +1,203 @@
+/* Basic CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(233.jpeg);
+    background-size: cover; /* Cover the entire area */ /* Center the image */
+    /* Full height */
+    color: white; /* Text color */
+    display: flex; /* Center content */
+    flex-direction: column; /* Stack content vertically */ /* Center horizontally */
+    font-family: 'Audiowide', sans-serif;
+    background-color: #f4f4f4;
+    color: white;
+    justify-content: center;
+}/* Reset default styles */
+.logo {
+    width: 400px;  /* Adjust size as needed */
+    height: 350px;  /* Keep the aspect ratio */
+    display: block; /* Prevents any unwanted inline spacing */
+    margin: 10px auto;
+    position: relative; /* Centers the logo horizontally, with 10px spacing from top */
+}
+
+header {  /* Light background for header */
+    position: absolute;
+    top: -140px;
+    left: 5px;
+}
+nav {
+    display: flex; /* Flexbox layout */
+    justify-content: flex-end; /* Space between logo and menu */ /* Vertically align the logo and menu */
+    height: 15vh;
+    padding: 10px 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    float: left;
+    text-align-last: left;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect */
+nav ul li a:hover {
+    background-color:rgb(42, 193, 153);  /* Orange background on hover */
+    color: #fff;  /* Keep the text color white */
+    border-radius: 8px;
+}
+.container {    
+    width: 200%;
+    max-width: 1050px;
+    height: 500px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    align-items: stretch;
+    justify-content: center;
+    gap: 1.25rem;
+    transition: all 400ms;
+  }
+  
+  .card {
+    flex: 1;
+    height: 100%;
+    transition: all 400ms;
+    cursor: pointer;
+  }
+  .card > img {
+    display: block;
+    width: 9cm;
+    height: 18cm;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid white;
+    /* opacity: 80%; */
+  }
+  
+  
+  .card:nth-child(odd) {
+    translate: 0 -20px;
+  }
+  .card:nth-child(even) {
+    translate: 0 20px;
+  }
+  
+  .container:hover .card:not(:hover) {
+    filter: grayscale(100%);
+  }
+  .card:hover {
+    flex: 3;
+  }
+
+/* Main Section */
+.product-list {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-list h2 {
+    margin-bottom: 20px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    margin: 10px 0;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Forms */
+section {
+    align-items: center;
+    max-width: 400px;
+    margin: 150px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color:black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(19, 188, 207);
+}
+
+p {
+    text-align: center;
+}

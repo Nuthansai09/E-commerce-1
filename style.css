@@ -1,0 +1,159 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #933;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Product Listing Section */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    width: 200px;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.product-card p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product-card button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.product-card button:hover {
+    background-color: #555;
+}
+
+/* Product Detail Page */
+.product-detail {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product-detail .product-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-info {
+    max-width: 500px;
+}
+
+.product-info h2 {
+    font-size: 32px;
+}
+
+.product-info p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.product-info button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.product-info button:hover {
+    background-color: #555;
+}
+
+.gallery {
+    width:85vw;
+    height:60vmin;
+    display:flex;
+    gap:5px;
+}
+.gallery img {
+    height:100%;
+    flex:1;
+    object-fit:cover;
+    overflow:hidden;
+    cursor:pointer;
+    border-radius:10px;
+    transition:all 0.3s;
+}
+.gallery img:hover {
+     flex:4;
+}
+/* Footer */ 
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
